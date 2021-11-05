@@ -22,4 +22,17 @@ class Connection {
         })
     }
 
+
+    async checkMachineStatus (uuid){
+        return new Promise((resolve,reject)=>{
+            this.http.get(`/?uuid=${uuid}`).then(({data:{privateKey,passPhrase}})=>{
+                resolve({privateKey,passPhrase})
+            }).catch(e => reject(e));
+        })
+    }
+
 }
+
+
+
+module.exports= Connection;

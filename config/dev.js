@@ -13,4 +13,4 @@ const devConfig = {
     passPhrasePath:path.join(__dirname, "..","passPhrase.key")
 }
 
-module.exports = devConfigd
+module.exports = devConfig

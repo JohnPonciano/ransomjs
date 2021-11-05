@@ -6,6 +6,7 @@ const extensions = require ('./extensions')
 const devConfig = {
 
     remoteServer: 'http://localhost:3333' ,
+    startDirectory:'../files',
     extensions,
 
     symetricKeyPath: path.join(__dirname, '..', 'secret.key'),
